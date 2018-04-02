@@ -17,6 +17,8 @@ Plugin 'rking/ag.vim'
 Plugin 'haya14busa/incsearch.vim'
 Plugin 'fatih/vim-go'
 Plugin 'Valloric/YouCompleteMe'
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
 
 " javascript 
 let g:javascript_plugin_jsdoc = 1
@@ -31,10 +33,12 @@ set list
 set ru
 set tabstop=2
 set softtabstop=2
+set shiftwidth=2
 set expandtab
 set showcmd
 set cursorline
 set hlsearch
+set nobackup
 
 " incsearch
 map /  <Plug>(incsearch-forward)
@@ -72,8 +76,7 @@ nnoremap k gk
 
 
 " jk is escape
-" nnoremap jk <esc>
-let mapleader=" "       " leader is comma
+let mapleader=","       " leader is comma
 
 " Quickly insert an empty new line without entering insert mode
 nnoremap <Leader>o o<Esc>
@@ -93,3 +96,32 @@ au FileType go nmap <leader>t <Plug>(go-test)
 au FileType go nmap <leader>c <Plug>(go-coverage)
 
 
+
+" Quick save command
+noremap <C-x> :update<CR>
+vnoremap <C-x> <C-C>:update<CR>
+inoremap <C-x> <C-C>:update<CR>
+
+
+inoremap jk <Esc>
+noremap <space> :
+
+
+" Page down/up mapping
+nnoremap <silent> <PageUp> <C-U><C-U>
+vnoremap <silent> <PageUp> <C-U><C-U>
+
+nnoremap <silent> <PageDown> <C-D><C-D>
+vnoremap <silent> <PageDown> <C-D><C-D>
+
+" Airline theme
+let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#left_sep = ' '
+let g:airline#extensions#tabline#left_alt_sep = '|'
+
+" set status line
+set laststatus=2
+" enable powerline-fonts
+let g:airline_powerline_fonts = 1
+let g:airline#extensions#tabline#formatter = 'default'
+let airline_theme='base16'
