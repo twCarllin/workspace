@@ -5,9 +5,6 @@ filetype off                  " required
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
-" If installed using Homebrew
-set rtp+=/usr/local/opt/fzf
-
 " let Vundle manage Vundle, required
 Plugin 'gmarik/vundle'
 Plugin 'pangloss/vim-javascript'
@@ -121,7 +118,28 @@ let g:airline#extensions#tabline#left_alt_sep = '|'
 
 " set status line
 set laststatus=2
+
 " enable powerline-fonts
 let g:airline_powerline_fonts = 1
+
 let g:airline#extensions#tabline#formatter = 'default'
-let airline_theme='base16'
+let airline_theme='solarized'
+
+let g:airline_solarized_bg='dark'
+
+" enable tabline
+let g:airline#extensions#tabline#enabled = 1
+
+" set left separator
+let g:airline#extensions#tabline#left_sep = ' '
+
+" set left separator which are not editting
+let g:airline#extensions#tabline#left_alt_sep = '|'
+
+" show buffer number
+let g:airline#extensions#tabline#buffer_nr_show = 1
+
+
+
+
+
