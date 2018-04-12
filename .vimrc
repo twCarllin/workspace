@@ -103,6 +103,11 @@ inoremap <C-x> <C-C>:update<CR>
 inoremap jk <Esc>
 noremap <space> :
 
+" Tab
+noremap <Leader>t :tabnew<CR>
+map <Leader>m <esc>:tabprevious<CR>
+map <Leader>n <esc>:tabnext<CR>
+
 
 " Page down/up mapping
 nnoremap <silent> <PageUp> <C-U><C-U>
