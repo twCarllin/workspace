@@ -63,6 +63,11 @@ map <C-l> <C-W>l
 map <C-h> <C-W>h
 
 
+" Split more naturally
+set splitbelow
+set splitright
+
+
 " space open/closes folds
 nnoremap <space> za
 
