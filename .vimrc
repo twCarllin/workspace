@@ -76,8 +76,6 @@ nnoremap <space> za
 nnoremap j gj
 nnoremap k gk
 
-
-" jk is escape
 let mapleader=","       " leader is comma
 
 " Quickly insert an empty new line without entering insert mode
@@ -106,6 +104,7 @@ inoremap <C-x> <C-C>:update<CR>
 
 
 inoremap jk <Esc>
+vnoremap jk <Esc>
 noremap <space> :
 
 " Tab
