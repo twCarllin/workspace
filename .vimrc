@@ -84,6 +84,9 @@ nnoremap <Leader>O O<Esc>
 
 " fzf quick search
 nnoremap <silent> <Leader>f :Files<CR>
+nnoremap <silent> vv :call fzf#run({
+\   'right': winwidth('.') / 2,
+\   'sink':  'vertical botright split' })<CR>
 
 " ag quick search
 nnoremap <leader>a :Ag
