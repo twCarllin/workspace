@@ -115,6 +115,10 @@ noremap <Leader>t :tabnew<CR>
 map <Leader>m <esc>:tabprevious<CR>
 map <Leader>n <esc>:tabnext<CR>
 
+" Buffer
+map gn :bn<cr>
+map gp :bp<cr>
+map gd :bd<cr>
 
 " Page down/up mapping
 nnoremap <silent> <PageUp> <C-U><C-U>
@@ -128,7 +132,7 @@ let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#left_sep = ' '
 let g:airline#extensions#tabline#left_alt_sep = '|'
 let g:airline#extensions#tabline#show_splits = 0
-let g:airline#extensions#tabline#show_buffers = 0
+" let g:airline#extensions#tabline#show_buffers = 0
 
 " set status line
 set laststatus=2
