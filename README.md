@@ -12,3 +12,6 @@
 
 ## Font ##
  - Using Aix in fonts folder, recommend font size 16
+
+## Initial Config ##
+ - Using the init.sh to config all. **NOT FINISH YET**
