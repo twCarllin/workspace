@@ -36,6 +36,8 @@ set showcmd
 set cursorline
 set hlsearch
 set nobackup
+set colorcolumn=79
+hi ColorColumn ctermbg=8
 
 " incsearch
 map /  <Plug>(incsearch-forward)
