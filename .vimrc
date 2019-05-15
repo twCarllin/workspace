@@ -16,6 +16,7 @@ Plugin 'fatih/vim-go'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
+Plugin 'scrooloose/syntastic'
 
 " javascript 
 let g:javascript_plugin_jsdoc = 1
@@ -159,7 +160,14 @@ let g:airline#extensions#tabline#left_alt_sep = '|'
 " show buffer number
 let g:airline#extensions#tabline#buffer_nr_show = 1
 
+" syntastic set up
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
 
-
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
 
 
