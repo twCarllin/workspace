@@ -1,6 +1,9 @@
 set nocompatible              " be iMproved, required
 filetype off                  " required
 
+scriptencoding utf-8
+set encoding=utf-8
+
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
@@ -26,7 +29,7 @@ syntax on
 " personal setting
 set number
 set relativenumber
-set listchars=eol:↵,tab:»·,trail:·,extends:»,precedes:«
+set listchars=tab:»\ ,extends:›,precedes:‹,nbsp:·,trail:·
 set list
 set ru
 set tabstop=2
