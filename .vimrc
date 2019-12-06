@@ -35,9 +35,9 @@ set relativenumber
 set listchars=tab:»\ ,extends:›,precedes:‹,nbsp:·,trail:·
 set list
 set ru
-set tabstop=2
-set softtabstop=2
-set shiftwidth=2
+set tabstop=4
+set softtabstop=4
+set shiftwidth=4
 set expandtab
 set showcmd
 set cursorline
