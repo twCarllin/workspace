@@ -8,6 +8,9 @@ set encoding=utf-8
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
+" set the runtime path to include fzf
+set rtp+=~/.fzf
+
 " let Vundle manage Vundle, required
 Plugin 'gmarik/vundle'
 Plugin 'pangloss/vim-javascript'
