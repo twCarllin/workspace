@@ -7,6 +7,7 @@ brew install the_silver_searcher
 brew install cmake
 brew install awscli
 brew install shellcheck
+brew install jq
 
 # Install vim Vundle and all other plugins
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/vundle
