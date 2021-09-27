@@ -21,7 +21,9 @@ echo 'alias fuz="source $HOME/.shell/fuz.sh"' >> ~/.zshrc
 echo 'alias fup="source $HOME/.shell/fup.sh"' >> ~/.zshrc
 echo 'source $HOME/.shell/key-binding.zsh' >> ~/.zshrc
 
- # Prompt↵
+ # Prompt
  echo 'PROMPT="%{$fg[cyan]%}%d $(git_prompt_info)
  %{$fg_bold[white]%}>> %{$reset_color%}"' >> ~/.zshrc
 
+# Download vim diff color
+curl -fLo ~/.vim/colors/molokai.vim --create-dirs https://raw.githubusercontent.com/tomasr/molokai/master/colors/molokai.vim
