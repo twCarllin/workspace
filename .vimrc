@@ -92,6 +92,7 @@ nnoremap <Leader>o o<Esc>
 nnoremap <Leader>O O<Esc>
 
 " fzf quick search
+let g:fzf_action = { 'enter': 'tab split' }
 nnoremap <silent> <Leader>f :Files<CR>
 nnoremap <silent> vv :call fzf#run({
 \   'right': winwidth('.') / 2,
